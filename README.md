@@ -5,18 +5,18 @@ This image is based on Alpine Linux image and contains [C/C++ compiler](https://
 ## Docker Hub images
 
 ```
-$ docker pull n0madic/alpine-gcc:7.5.0
+$ docker pull boeboe/alpine-gcc:3.14-11.2.0
 or
-$ docker pull n0madic/alpine-gcc:8.4.0
+$ docker pull boeboe/alpine-gcc:3.13-11.1.0
 or
-$ docker pull n0madic/alpine-gcc:9.2.0
+$ docker pull boeboe/alpine-gcc:3.12-11.2.0
+or
+$ docker pull boeboe/alpine-gcc:3.11-11.1.0
+
 ```
 
-## Build image and usage
+## Build image
 
 ```
-$ git clone https://github.com/n0madic/alpine-gcc.git
-$ cd alpine-gcc
-$ docker build --build-arg GCC_VERSION=7.5.0 -t alpine-gcc .
-$ docker run --rm -it -v $(pwd):/src alpine-gcc
+$ make
 ```
