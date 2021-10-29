@@ -22,7 +22,7 @@ build: ## Build the container
 
 build-nc: ## Build the container without caching
 	docker build ${BUILD_ARGS} --no-cache -t $(DOCKER_ACCOUNT)/alpine-3.11-gcc -f ./Dockerfile.alpine-3.11 .
-	docker build --no-cache -t $(DOCKER_ACCOUNT)/alpine-3.12-gcc -f ./Dockerfile.alpine-3.12 .
+	docker build ${BUILD_ARGS} --no-cache -t $(DOCKER_ACCOUNT)/alpine-3.12-gcc -f ./Dockerfile.alpine-3.12 .
 	docker build ${BUILD_ARGS} --no-cache -t $(DOCKER_ACCOUNT)/alpine-3.13-gcc -f ./Dockerfile.alpine-3.13 .
 	docker build ${BUILD_ARGS} --no-cache -t $(DOCKER_ACCOUNT)/alpine-3.14-gcc -f ./Dockerfile.alpine-3.14 .
 
