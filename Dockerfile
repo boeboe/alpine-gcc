@@ -58,7 +58,7 @@ RUN ln -s /usr/bin/gcc /usr/local/bin/cc
 RUN gcc -v
 
 
-FROM alpine:3.11
+FROM alpine:${ALPINE_VERSION}
 
 RUN apk add --quiet --no-cache \
             autoconf \
