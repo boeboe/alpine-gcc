@@ -24,6 +24,3 @@ build                          Build the container
 publish                        Tag and publish container
 release                        Make a full release 
 ```
-
-
-make release ALPINE_VERSION=3.11 GCC_VERSION=11.1.0 ; make release ALPINE_VERSION=3.12 GCC_VERSION=11.1.0 ; make release ALPINE_VERSION=3.13 GCC_VERSION=11.1.0 ; make release ALPINE_VERSION=3.14 GCC_VERSION=11.1.0
