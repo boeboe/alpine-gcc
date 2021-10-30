@@ -1,10 +1,11 @@
-FROM alpine:3.13 as alpine
+ARG ALPINE_VERSION=latest
+FROM alpine:${ALPINE_VERSION} as alpine
 
 ARG GCC_VERSION
 ENV GCC_VERSION=${GCC_VERSION}
 
 
-FROM alpine:3.13 as builder
+FROM alpine:${ALPINE_VERSION} as builder
 
 ARG GCC_VERSION
 ENV GCC_VERSION=${GCC_VERSION}
@@ -57,7 +58,7 @@ RUN ln -s /usr/bin/gcc /usr/local/bin/cc
 RUN gcc -v
 
 
-FROM alpine:3.13
+FROM alpine:3.11
 
 RUN apk add --quiet --no-cache \
             autoconf \
