@@ -1,6 +1,6 @@
 # The Alpine Docker image with latest GCC
 
-This image is based on Alpine Linux image and contains [C/C++ compiler](https://gcc.gnu.org/) (GCC 7/8/9).
+This image is based on Alpine Linux image and contains [C/C++ compiler](https://gcc.gnu.org/) (GCC 11).
 
 ## Docker Hub images
 
@@ -19,4 +19,8 @@ $ docker pull boeboe/alpine-gcc:3.11-11.1.0
 
 ```
 $ make
+help                           This help
+build                          Build the container
+publish                        Tag and publish container
+release                        Make a full release 
 ```
