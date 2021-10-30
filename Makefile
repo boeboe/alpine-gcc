@@ -1,7 +1,7 @@
 # General release info
 DOCKER_ACCOUNT := boeboe
 GCC_VERSION    := 11.2.0
-ALPINE_VERSION := 3.11 # 3.12 3.13 3.14
+ALPINE_VERSION := 3.11
 
 BUILD_ARGS		 := --build-arg GCC_VERSION=${GCC_VERSION} --build-arg ALPINE_VERSION=${ALPINE_VERSION}
 
