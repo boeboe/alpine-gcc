@@ -69,6 +69,7 @@ RUN apk add --quiet --no-cache \
             git \
             gmp \
             isl \
+            isl22 \
             libc-dev \
             libtool \
             make \
